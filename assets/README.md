@@ -1,0 +1,1 @@
+These assets are not used locally, but I've included them anyways in case you want to run this under your own Discord application. Upload these as rich presence art assets in your [Discord Developer Portal](https://discordapp.com/developers/).

@@ -1,0 +1,7 @@
+# Common cache files
+/__pycache__
+/vscode
+# Your config
+config.py
+# Stuff in my local repo
+/unused_assets
