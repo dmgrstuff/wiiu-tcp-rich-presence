@@ -32,7 +32,7 @@ def tcp_connect():
         tcp = TCPGecko(ip) # connect to your Wii U
     except TimeoutError:
         clear()
-        print("Connection timed out. Please try again.") 
+        print("Connection timed out. Please try again.\n") 
         menu()
     tcp_connected = True
     clear()
@@ -132,9 +132,11 @@ def title_info():
     try: game = json.loads(data)["game_title_clean"]
     except KeyError:
         game = "Wii U Menu"
+    
+    if game == "Wii U Menu":
         details = "In the " + game
-        get_icon()
-    details = "Playing " + game
+    else:
+        details = "Playing " + game
 
     spaces = game.count(" ")
     if spaces >= 3:
@@ -150,7 +152,7 @@ def get_icon(): # pre-defined icons for some titles, this will likely be reworke
     global large_image
     if game == "Splatoon":
         large_image = "splatoon"
-    elif game == "MARIO KART 8":
+    elif game == "Mario Kart 8": # temporary fix until I can figure out why it changes the capitalization
         large_image = "mariokart8"
     elif game == "The Legend of Zelda Breath of the Wild":
         large_image = "breath_of_the_wild"
