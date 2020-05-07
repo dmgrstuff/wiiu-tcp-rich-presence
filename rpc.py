@@ -15,7 +15,7 @@ import struct
 # With all that said, this thing actually somehow works (at least it should) and I'm pretty surprised I even got this far.
 # Credits are at the bottom of the README.md if you're interested.
 
-release_date = "2020/04/25"
+release_date = "2020-05-06"
 
 # Variables
 debug_mode = False
