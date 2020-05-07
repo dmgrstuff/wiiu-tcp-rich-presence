@@ -35,7 +35,7 @@ Before starting, you'll want to install the latest version of [Python 3](https:/
 
 **2.** Next, you'll want to run `pip install pypresence`. This will install the module we'll be using to interface with Discord.
 
-**3.** Rename `config.example.py` to `config.py` and fill in your Wii U's IP, your NNID (if you want to display it - if not, set `show_nnid` to `False`) and any other options you'd like to change.
+**3.** Rename `config.example.py` to `config.py` and open the file in a text editor. Fill in your Wii U's IP, your NNID (if you want to display it - if not, set `show_nnid` to `False`) and any other options you'd like to change.
 
 **4.** Moving over to your Wii U, boot into the Homebrew Launcher and run TCPGecko. Press A to install it into memory (we won't need SD cheats, obviously) and you'll be sent back to the Wii U Menu.
 
