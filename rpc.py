@@ -28,11 +28,14 @@ debug_disable_keyword = "notsosecretnormalmode" # type to disable debug mode (if
 def tcp_connect():
     global tcp
     global tcp_connected
+    global rpc_running
     try: 
         tcp = TCPGecko(ip) # connect to your Wii U
     except TimeoutError:
         clear()
         print("Connection timed out. Please try again.\n") 
+        if rpc_running == True:
+            RPC.close()
         menu()
     tcp_connected = True
     clear()
