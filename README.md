@@ -29,9 +29,9 @@ With all that out of the way, let's talk about the application!
 
 ## Setup
 
-Before starting, you'll want to install the latest version of [Python 3](https://www.python.org/downloads/) (for obvious reasons) and [Git](https://git-scm.com/) for your OS. You'll also need TCPGecko (downloadable from the Homebrew App Store or [this repo](https://github.com/BullyWiiPlaza/tcpgecko/)) on your Wii U's SD card and a homebrew entry point (Haxchi, browser exploit, CBHC, whatever).
+Before starting, you'll want to install the latest version of [Python 3](https://www.python.org/downloads/) (for obvious reasons) and [Git](https://git-scm.com/) for your OS. If you don't want to or can't install Git, you can also download the .zip [here](https://github.com/dmgrstuff/wiiu-tcp-rich-presence/archive/master.zip) and extract the files manually. You'll also need TCPGecko (downloadable from the Homebrew App Store or [this repo](https://github.com/BullyWiiPlaza/tcpgecko/)) on your Wii U's SD card and a homebrew entry point (Haxchi, browser exploit, CBHC, whatever).
 
-**1.** First things first, navigate to a convenient place in your terminal and run `git clone https://github.com/dmgrstuff/wiiu-tcp-rich-presence.git && cd wiiu-tcp-rich-presence`. This will clone the repo into a correspondingly named folder and navigate into that folder.
+**1.** First things first, navigate to a convenient place in your terminal and run `git clone https://github.com/dmgrstuff/wiiu-tcp-rich-presence.git && cd wiiu-tcp-rich-presence`. This will clone the repo into a correspondingly named folder and navigate into that folder. Alternatively, download the .zip mentioned above and extract it somewhere convenient.
 
 **2.** Next, you'll want to run `pip install pypresence`. This will install the module we'll be using to interface with Discord.
 
@@ -39,15 +39,15 @@ Before starting, you'll want to install the latest version of [Python 3](https:/
 
 **4.** Moving over to your Wii U, boot into the Homebrew Launcher and run TCPGecko. Press A to install it into memory (we won't need SD cheats, obviously) and you'll be sent back to the Wii U Menu.
 
-**5.** From here, run `python3 rpc.py` in your terminal and you'll see the program's main menu. Unless you run into issues, Automatic mode is the easiest and best option here. If you run into an `InvalidPipe` exception, make sure Discord is running.
+**5.** From here, run `python3 rpc.py` in your terminal and you'll see the program's main menu. Unless you run into issues, Automatic mode is the easiest and best option here. If Python throws an `InvalidPipe` exception, make sure Discord is running.
 
-**6.** If everything went according to plan, you should now see whatever you're doing on your Wii U in your status. You can now launch your game of choice, show off to the world, brag to your friends, or whatever you want.
+**6.** Assuming everything went according to plan, you should now see whatever you're doing on your Wii U in your status. You can now launch your game of choice, show off to the world, brag to your friends, or whatever you want.
 
 Just make sure they don't read my code because it's really, ***really*** bad.
 
 ## Known issues
 
-- Certain games might cause the console to freeze if TCPGecko tries to connect. As far as I know, this is an issue with TCPGecko itself, so it may or may not be fixed.
+- Certain games or apps might cause the console to freeze if TCPGecko tries to connect. As far as I know, this is an issue with TCPGecko itself, so it may or may not be fixed.
 - If you're using an application that's accessible in game (like the Friend List, Internet Browser, eShop, etc.) the program will hang. This happens because TCPGecko doesn't seem to send any data when in these types of titles. This also happens with JGecko U so again, it's likely not something I can fix.
 - Trying to launch Rich Presence without Discord running will crash the application. It's normal to throw an exception but I'd like to handle it a little more smoothly.
 - Wii VC games don't (and likely will never) work due to the way vWii and cafe2wii works.
@@ -60,7 +60,7 @@ Just make sure they don't read my code because it's really, ***really*** bad.
 
 ## Credits
 
-**NexoDevelopment** and **twosecslater** for the original idea behind and implementations of this project  
+**NexoDevelopment** and **2secslater** for the original idea behind and implementations of this project  
 **RedDucks** for the CemUI API
 
 > Taken from [https://github.com/BullyWiiPlaza/tcpgecko](https://github.com/BullyWiiPlaza/tcpgecko):
