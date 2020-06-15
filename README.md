@@ -33,7 +33,7 @@ Before starting, you'll want to install the latest version of [Python 3](https:/
 
 **1.** First things first, navigate to a convenient place in your terminal and run `git clone https://github.com/dmgrstuff/wiiu-tcp-rich-presence.git && cd wiiu-tcp-rich-presence`. This will clone the repo into a correspondingly named folder and navigate into that folder. Alternatively, download the .zip mentioned above and extract it somewhere convenient.
 
-**2.** Next, you'll want to run `pip install pypresence`. This will install the module we'll be using to interface with Discord.
+**2.** Next, you'll want to run `python -m pip install pypresence`. This should install the rich presence library we're using using Python's package installer.
 
 **3.** Rename `config.example.py` to `config.py` and open the file in a text editor. Fill in your Wii U's IP, your NNID (if you want to display it - if not, set `show_nnid` to `False`) and any other options you'd like to change.
 
