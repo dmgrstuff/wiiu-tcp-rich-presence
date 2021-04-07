@@ -1,3 +1,6 @@
+<h3 align="center">This script is currently unmaintained and likely broken.</h3>
+<h4 align="center">Please see <a href="https://github.com/dmgrstuff/rpcgecko">RPCGecko</a> for a (somewhat) actively maintained rewrite.</h4>
+  
 <p align="center">
   <img width="256px" height="256px" src="https://i.living-me.me/i/fckk.png">
 </p>
